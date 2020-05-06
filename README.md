@@ -1,4 +1,4 @@
-# C4RT4 v2 2011
+# C4RT4 v2 2011 (discontinued)
 
 Jeu de cartes Marocaine / Morrocan Game Cards
 
@@ -12,3 +12,5 @@ Jeu de cartes Marocaine / Morrocan Game Cards
 
 Il y à normalement une API web pour pouvoir se connecter et jouer en ligne mais le domaien www.c4rt4.com n'est plus en ligne.
 un backup de l'api sera partagé bientôt.
+
+L'executable se trouve dans le fichier bin/Debug, aucun install
