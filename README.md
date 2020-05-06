@@ -9,5 +9,5 @@ avec 2 jeu different
 <img src="C4RT4/Resources/screen3.png" width = "300">
 <img src="C4RT4/Resources/screen4.png" width = "300">cheat code ;)
 
-Il y à normalement une API web pour pouvoir se connecteret jouer en ligne mais le domaien www.c4rt4.com n'est plus en ligne.
+Il y à normalement une API web pour pouvoir se connecter et jouer en ligne mais le domaien www.c4rt4.com n'est plus en ligne.
 un backup de l'api sera partagé bientôt.
