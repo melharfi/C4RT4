@@ -1,7 +1,8 @@
 # C4RT4 v2 2011
 
-Jeu de cartes Marocaine / Morrocan Card game
-avec 2 jeu different
+Jeu de cartes Marocaine / Morrocan Game Cards
+
+2 jeux different / 2 games
 
 <img src="C4RT4/Resources/img/logo.gif" width = "300">
 <img src="C4RT4/Resources/screen1.png" width = "300">
