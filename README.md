@@ -21,3 +21,6 @@ Une terminologie, lexique et une voix Marocaine
 
 Executable file is in bin/Debug directory, no installer
 Morrocan lexical, terminologies and voice lol
+
+Le projet na pas été achevé, a savoir qu'un seul jeu est jouable en solo et l'autre en réseau
+Project is not achieved, there is only 1 game in solo and the other one needs network join party
