@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25663A1D-70D0-4A4C-B0FA-98A8167DA42B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C4RT4</RootNamespace>
+    <AssemblyName>C4RT4</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>logo2.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>69480F468DF96E56C68AB6A58F825C902E6D6E46</ManifestCertificateThumbprint>
+    <ManifestKeyFile>C4RT4_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.5.100.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parametres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parametres.Designer.cs">
+      <DependentUpon>parametres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parametresR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parametresR.Designer.cs">
+      <DependentUpon>parametresR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs" />
+    <Compile Include="profileR.cs" />
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parametres.resx">
+      <DependentUpon>parametres.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parametresR.resx">
+      <DependentUpon>parametresR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rondaR.resx">
+      <DependentUpon>rondaR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zriwita.resx">
+      <DependentUpon>zriwita.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zriwitaR.resx">
+      <DependentUpon>zriwitaR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\Debug\C4RT4.application" />
+    <None Include="bin\Debug\C4RT4.exe.config" />
+    <None Include="bin\Debug\C4RT4.exe.manifest" />
+    <None Include="bin\Debug\C4RT4.vshost.application" />
+    <None Include="bin\Debug\C4RT4.vshost.exe.config" />
+    <None Include="bin\Debug\img\pieces_rnd\5.psd" />
+    <None Include="bin\Debug\img\pieces_rnd\backpanelstats.psd" />
+    <None Include="bin\Debug\img\pieces_rnd\bnt.psd" />
+    <None Include="bin\Debug\img\pieces_rnd\ds.psd" />
+    <None Include="bin\Debug\img\pieces_rnd\etoile.psd" />
+    <None Include="bin\Debug\img\pieces_rnd\start.psd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rondaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rondaR.Designer.cs">
+      <DependentUpon>rondaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session_wan.cs" />
+    <Compile Include="zriwita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zriwita.Designer.cs">
+      <DependentUpon>zriwita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zriwitaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zriwitaR.Designer.cs">
+      <DependentUpon>zriwitaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_player.cs" />
+    <Compile Include="_playerR.cs" />
+    <None Include="Resources\img\pieces_rnd\5.psd" />
+    <None Include="Resources\img\pieces_rnd\backpanelstats.psd" />
+    <None Include="Resources\img\pieces_rnd\bnt.psd" />
+    <None Include="Resources\img\pieces_rnd\ds.psd" />
+    <None Include="Resources\img\pieces_rnd\etoile.psd" />
+    <None Include="Resources\img\pieces_rnd\start.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\close1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\about.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\yes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\logo2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\newg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\disp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\img\about.jpg" />
+    <Content Include="Resources\img\back.jpg" />
+    <Content Include="Resources\img\back1.jpg" />
+    <Content Include="Resources\img\cardswin.gif" />
+    <Content Include="Resources\img\cartes\dos\dos-1.jpg" />
+    <Content Include="Resources\img\cartes\dos\dos-2.jpg" />
+    <Content Include="Resources\img\cartes\dos\dos-3.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\1-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\1-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\1-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\1-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\10-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\10-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\10-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\10-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\11-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\11-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\11-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\11-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\12-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\12-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\12-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\12-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\2-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\2-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\2-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\2-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\3-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\3-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\3-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\3-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\4-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\4-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\4-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\4-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\5-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\5-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\5-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\5-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\6-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\6-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\6-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\6-z.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\7-f.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\7-s.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\7-t.jpg" />
+    <Content Include="Resources\img\cartes\tamisé\7-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\1-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\1-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\1-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\1-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\10-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\10-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\10-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\10-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\11-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\11-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\11-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\11-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\12-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\12-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\12-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\12-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\2-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\2-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\2-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\2-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\3-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\3-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\3-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\3-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\4-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\4-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\4-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\4-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\5-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\5-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\5-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\5-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\6-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\6-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\6-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\6-z.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\7-f.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\7-s.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\7-t.jpg" />
+    <Content Include="Resources\img\cartes\éclairé\7-z.jpg" />
+    <Content Include="Resources\img\chrono.gif" />
+    <Content Include="Resources\img\close.jpg" />
+    <Content Include="Resources\img\close1.jpg" />
+    <Content Include="Resources\img\decrement.gif" />
+    <Content Include="Resources\img\disp.jpg" />
+    <Content Include="Resources\img\dispers.gif" />
+    <Content Include="Resources\img\forfait.gif" />
+    <Content Include="Resources\img\GameOver.gif" />
+    <Content Include="Resources\img\inc.gif" />
+    <Content Include="Resources\img\kicked.jpg" />
+    <Content Include="Resources\img\loading1.jpg" />
+    <Content Include="Resources\img\loading2.gif" />
+    <Content Include="Resources\img\loading3.gif" />
+    <Content Include="Resources\img\logo.gif" />
+    <Content Include="Resources\img\logo2.ico" />
+    <Content Include="Resources\img\logout.gif" />
+    <Content Include="Resources\img\newg.jpg" />
+    <Content Include="Resources\img\parametreGlobal.gif" />
+    <Content Include="Resources\img\pieces_rnd\backpanelstats1.jpg" />
+    <Content Include="Resources\img\pieces_rnd\backpanelstats2.jpg" />
+    <Content Include="Resources\img\pieces_rnd\etoile2.gif" />
+    <Content Include="Resources\img\pieces_rnd\etoile3.gif" />
+    <Content Include="Resources\img\pieces_rnd\etoile4.gif" />
+    <Content Include="Resources\img\pieces_rnd\style1\1.gif" />
+    <Content Include="Resources\img\pieces_rnd\style1\5.gif" />
+    <Content Include="Resources\img\replay.gif" />
+    <Content Include="Resources\img\ronda\avatars\fox.jpg" />
+    <Content Include="Resources\img\ronda\avatars\m0RpH3R.jpg" />
+    <Content Include="Resources\img\ronda\cheater.gif" />
+    <Content Include="Resources\img\synGraph.gif" />
+    <Content Include="Resources\img\tapis\1.jpg" />
+    <Content Include="Resources\img\tapis\2.jpg" />
+    <Content Include="Resources\img\tapis\3.jpg" />
+    <Content Include="Resources\img\tapis\4.jpg" />
+    <Content Include="Resources\img\tapis\5.jpg" />
+    <Content Include="Resources\img\trophe.gif" />
+    <Content Include="Resources\img\vip.gif" />
+    <Content Include="Resources\img\vipGray.gif" />
+    <Content Include="Resources\img\volumeKo.gif" />
+    <Content Include="Resources\img\volumeOk.gif" />
+    <Content Include="Resources\img\winThumbs.gif" />
+    <Content Include="Resources\img\yes.jpg" />
+    <Content Include="Resources\img\zriwita\avatars\fox.jpg" />
+    <Content Include="Resources\img\zriwita\avatars\m0RpH3R.jpg" />
+    <Content Include="Resources\img\zriwita\cheater.gif" />
+    <Content Include="Resources\profiles\ronda\fox\extra1\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra1\02.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra2\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra2\02.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra3\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra3\02.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4f\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4f\02.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4s\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4s\02.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4s\03.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4t\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4z\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4\01.wav" />
+    <Content Include="Resources\profiles\ronda\fox\extra4\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra1\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra1\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra1\03.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra2\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra2\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra2\03.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra3\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra3\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4f\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4f\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4s\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4s\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4t\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4t\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4z\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4z\02.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4\01.wav" />
+    <Content Include="Resources\profiles\ronda\m0RpH3R\extra4\02.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra1\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra1\02.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra2\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra2\02.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra3\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra3\02.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4f\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4f\02.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4s\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4s\02.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4s\03.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4t\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4z\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4\01.wav" />
+    <Content Include="Resources\profiles\zriwita\fox\extra4\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra1\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra1\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra1\03.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra2\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra2\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra2\03.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra3\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra3\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4f\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4f\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4s\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4s\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4t\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4t\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4z\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4z\02.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4\01.wav" />
+    <Content Include="Resources\profiles\zriwita\m0RpH3R\extra4\02.wav" />
+    <Content Include="Resources\save\global.xml" />
+    <Content Include="Resources\save\rondaR.xml" />
+    <Content Include="Resources\save\zriwita.xml" />
+    <Content Include="Resources\save\zriwitaR.xml" />
+    <Content Include="Resources\son\applaud.wav" />
+    <Content Include="Resources\son\cheater.wav" />
+    <Content Include="Resources\son\forfait.wav" />
+    <Content Include="Resources\son\Grease_Monkey.wav" />
+    <Content Include="Resources\son\perdre.wav" />
+    <Content Include="Resources\temps\thumbs_wan\fox.JPG" />
+    <Content Include="Resources\temps\thumbs_wan\mor.JPG" />
+    <None Include="app.config" />
+    <None Include="bin\Debug\img\cartes\dos\dos-1.jpg" />
+    <None Include="bin\Debug\img\cartes\dos\dos-3.jpg" />
+    <None Include="bin\Debug\img\cartes\dos\dos-2.jpg" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="bin\Debug\img\replay.gif" />
+    <None Include="Properties\app.manifest" />
+    <None Include="bin\Debug\img\trophe.gif" />
+    <None Include="bin\Debug\img\volumeOk.gif" />
+    <None Include="bin\Debug\img\volumeKo.gif" />
+    <None Include="bin\Debug\img\inc.gif" />
+    <None Include="bin\Debug\img\decrement.gif" />
+    <None Include="bin\Debug\img\back.jpg" />
+    <None Include="bin\Debug\img\logout.gif" />
+    <None Include="bin\Debug\img\loading1.jpg" />
+    <None Include="bin\Debug\img\loading2.gif" />
+    <None Include="bin\Debug\img\back1.jpg" />
+    <None Include="bin\Debug\img\vip.gif" />
+    <None Include="bin\Debug\img\vipGray.gif" />
+    <None Include="bin\Debug\img\winThumbs.gif" />
+    <None Include="bin\Debug\img\chrono.gif" />
+    <None Include="bin\Debug\img\synGraph.gif" />
+    <None Include="bin\Debug\img\parametreGlobal.gif" />
+    <None Include="bin\Debug\img\dispers.gif" />
+    <None Include="bin\Debug\img\cardswin.gif" />
+    <None Include="bin\Debug\img\pieces_rnd\backpanelstats1.jpg" />
+    <None Include="bin\Debug\img\pieces_rnd\backpanelstats2.jpg" />
+    <None Include="bin\Debug\img\pieces_rnd\etoile3.gif" />
+    <None Include="bin\Debug\img\pieces_rnd\etoile2.gif" />
+    <None Include="bin\Debug\img\pieces_rnd\etoile4.gif" />
+    <Content Include="bin\Debug\app.publish\C4RT4.exe" />
+    <Content Include="bin\Debug\C4RT4.exe" />
+    <Content Include="bin\Debug\C4RT4.pdb" />
+    <Content Include="bin\Debug\C4RT4.vshost.exe" />
+    <Content Include="bin\Debug\img\cartes\tamisé\1-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\1-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\1-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\1-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\10-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\10-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\10-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\10-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\11-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\11-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\11-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\11-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\12-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\12-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\12-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\12-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\2-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\2-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\2-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\2-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\3-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\3-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\3-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\3-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\4-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\4-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\4-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\4-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\5-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\5-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\5-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\5-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\6-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\6-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\6-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\6-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\7-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\7-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\7-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\tamisé\7-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\1-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\1-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\1-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\1-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\10-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\10-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\10-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\10-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\11-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\11-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\11-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\11-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\12-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\12-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\12-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\12-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\2-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\2-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\2-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\2-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\3-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\3-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\3-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\3-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\4-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\4-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\4-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\4-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\5-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\5-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\5-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\5-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\6-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\6-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\6-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\6-z.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\7-f.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\7-s.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\7-t.jpg" />
+    <Content Include="bin\Debug\img\cartes\éclairé\7-z.jpg" />
+    <Content Include="bin\Debug\img\forfait.gif" />
+    <Content Include="bin\Debug\img\GameOver.gif" />
+    <Content Include="bin\Debug\img\kicked.jpg" />
+    <Content Include="bin\Debug\img\loading3.gif" />
+    <Content Include="bin\Debug\img\pieces_rnd\style1\1.gif" />
+    <Content Include="bin\Debug\img\pieces_rnd\style1\5.gif" />
+    <Content Include="bin\Debug\img\ronda\avatars\fox.jpg" />
+    <Content Include="bin\Debug\img\ronda\avatars\m0RpH3R.jpg" />
+    <Content Include="bin\Debug\img\ronda\cheater.gif" />
+    <Content Include="bin\Debug\img\tapis\1.jpg" />
+    <Content Include="bin\Debug\img\tapis\2.jpg" />
+    <Content Include="bin\Debug\img\tapis\3.jpg" />
+    <Content Include="bin\Debug\img\tapis\4.jpg" />
+    <Content Include="bin\Debug\img\tapis\5.jpg" />
+    <Content Include="bin\Debug\img\zriwita\avatars\fox.jpg" />
+    <Content Include="bin\Debug\img\zriwita\avatars\m0RpH3R.jpg" />
+    <Content Include="bin\Debug\img\zriwita\cheater.gif" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra1\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra1\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra2\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra2\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra3\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra3\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4f\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4f\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4s\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4s\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4s\03.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4t\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4z\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\fox\extra4\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra1\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra1\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra1\03.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra2\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra2\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra2\03.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra3\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra3\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4f\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4f\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4s\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4s\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4t\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4t\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4z\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4z\02.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4\01.wav" />
+    <Content Include="bin\Debug\profiles\ronda\m0RpH3R\extra4\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra1\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra1\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra2\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra2\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra3\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra3\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4f\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4f\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4s\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4s\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4s\03.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4t\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4z\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\fox\extra4\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra1\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra1\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra1\03.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra2\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra2\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra2\03.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra3\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra3\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4f\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4f\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4s\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4s\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4t\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4t\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4z\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4z\02.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4\01.wav" />
+    <Content Include="bin\Debug\profiles\zriwita\m0RpH3R\extra4\02.wav" />
+    <Content Include="bin\Debug\save\global.xml" />
+    <Content Include="bin\Debug\save\rondaR.xml" />
+    <Content Include="bin\Debug\save\zriwita.xml" />
+    <Content Include="bin\Debug\save\zriwitaR.xml" />
+    <Content Include="bin\Debug\son\applaud.wav" />
+    <Content Include="bin\Debug\son\cheater.wav" />
+    <Content Include="bin\Debug\son\forfait.wav" />
+    <Content Include="bin\Debug\son\Grease_Monkey.wav" />
+    <Content Include="bin\Debug\son\perdre.wav" />
+    <Content Include="bin\Debug\temps\thumbs_wan\fox.JPG" />
+    <Content Include="bin\Debug\temps\thumbs_wan\mor.JPG" />
+    <Content Include="bin\Debug\Uplauncher.exe" />
+    <Content Include="logo2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\img\pieces_rnd\profile1\" />
+    <Folder Include="Resources\img\pieces_rnd\profile1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
