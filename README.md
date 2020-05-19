@@ -29,6 +29,7 @@ Morrocan lexical, terminologies and voice lol
 Le projet na pas été achevé, a savoir qu'un seul jeu est jouable en solo et l'autre en réseau
 Project is not achieved, there is only 1 game in solo and the other one needs network join party
 
-Un fichier C4RT4.7z contien l'api Web, attention le fichier system/bddcordon.php contien une utilisation de mysql_connect ancienne non utilisé depuis php7.
-C4RT4.7z has the web api, make attention that a file in system/bddcordon.php use a deprecated function mysql_connect no longer user above of php7
+L'api Web se trouve dans le dossier "webapi", attention le fichier system/bddcordon.php utilise des commande Mysql qui n'est plus supporté, il faut utilisé mySQLi à la place 'audela de php7 je pense".
+
+Web api is in "webapi" file, make attention that a file in system/bddcordon.php use a deprecated function mysql_connect no longer user above of php7, rather use mySQLi instead.
 
