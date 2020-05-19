@@ -1,8 +1,8 @@
 # C4RT4 v2
 
-Jeu de cartes Marocaine / Morrocan Game Cards
-
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/melharfi/MELHARFI-2D-Game-Engine/blob/master/LICENSE)
+
+Jeu de cartes Marocaine / Morrocan Game Cards
 
 Projet abondonné depuis 2011, discontinued since 2011
 
