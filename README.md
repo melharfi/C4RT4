@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/melharfi/C4RT4/blob/master/LICENSE)
 [![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://github.com/melharfi/C4RT4)
-[![GitHub Release](https://img.shields.io/github/v/release/melharfi/C4RT4)]() 
+[![GitHub Release](https://img.shields.io/github/v/release/melharfi/C4RT4)](https://github.com/melharfi/C4RT4) 
 
 Jeu de cartes Marocaine / Morrocan Game Cards
 
