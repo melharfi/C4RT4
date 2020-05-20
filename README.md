@@ -4,6 +4,7 @@
 [![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://github.com/melharfi/C4RT4)
 [![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VN92ND2CDMX92)
 ![GitHub Release Date](https://img.shields.io/github/release-date/melharfi/C4RT4?color=Green)
+![GitHub language count](https://img.shields.io/github/languages/count/melharfi/C4RT4)
 
 Jeu de cartes Marocaine / Morrocan Game Cards
 
